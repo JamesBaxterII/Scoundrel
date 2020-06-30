@@ -4,7 +4,7 @@ import { Deck } from "./Deck";
 
 const avoidBtn = document.getElementById("avoid-button") as HTMLButtonElement
 avoidBtn!.addEventListener('click', _listener_avoid)
-
+//test comment
 function _listener_avoid() {
     removeListenersFromRoomDivs()
     if(deckObj.cards.length === 0)
@@ -324,7 +324,7 @@ function fightMonster (monster: Card, event: Event) :void {
 
 function addListenerToDeck() {
     deckDiv.classList.add("choice")
-    deckDiv.addEventListener('click', () => { populateRoom() })
+    deckDiv.addEventListener('click', () => { populateRoom() }, {once: true})
 }
 
 function addListenersToRoomCards(){

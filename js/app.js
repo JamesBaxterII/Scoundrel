@@ -3,6 +3,7 @@ define(["require", "exports", "./Card", "./Deck"], function (require, exports, C
     Object.defineProperty(exports, "__esModule", { value: true });
     var avoidBtn = document.getElementById("avoid-button");
     avoidBtn.addEventListener('click', _listener_avoid);
+    //test comment
     function _listener_avoid() {
         removeListenersFromRoomDivs();
         if (deckObj.cards.length === 0) {
@@ -262,7 +263,7 @@ define(["require", "exports", "./Card", "./Deck"], function (require, exports, C
     }
     function addListenerToDeck() {
         deckDiv.classList.add("choice");
-        deckDiv.addEventListener('click', function () { populateRoom(); });
+        deckDiv.addEventListener('click', function () { populateRoom(); }, { once: true });
     }
     function addListenersToRoomCards() {
         roomObj.forEach(function (card) {
