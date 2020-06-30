@@ -1,0 +1,163 @@
+body {
+    background-color: #d7dfdd;
+}
+
+div {
+    border-style: dotted;
+}
+
+img {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+h1 {
+    text-align: center;
+}
+
+
+
+.above-play {
+    display: flex;
+    /* justify-content: space-evenly; */
+    width: 55%;
+    margin: auto;
+}
+
+.empty, .health {
+    flex: 1;
+}
+
+.health {
+    color: #cc3329;
+    font-size: 2em;
+    border-style: solid;
+    margin: 0;
+    /* align-self: flex-end; */
+    text-align: end;
+    padding-right: 10px;
+}
+
+.playArea {
+    border-style: solid;
+    border-width: 2px;
+    display: flex;
+    flex-wrap: wrap;
+    height: 400px;
+    width: 55%;
+    margin: auto;
+    padding: 0px;
+    justify-content: center;
+    padding-top: 15px;
+}
+
+.cardContainer {
+    border-style: solid;
+    margin: 5px;
+    width: 86px;
+    height: 131px;
+}
+
+#top-row {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    align-items: center; 
+    justify-content: center;   
+    border-color: yellow;
+    /* align-self: flex-start; */
+}
+
+#room {
+    display: flex;
+    border-color: red;
+}
+
+
+#bottom-row {
+    display: flex;
+    width: 100%;
+    height: 40%;
+    align-items: center; 
+    /* align-items: center; */
+    justify-content: center;   
+    align-self: flex-end;
+    border-color: yellow;
+}
+
+.weapon-container {
+    display: flex;
+    align-items: center;
+}
+
+.monsters-container {
+    position: relative;
+    display: flex;
+    /* align-items: center; */
+    border-color: red;
+    /* flex-grow: 1; */
+    /* height: 100%; */
+}
+
+.monster1 {  
+    position: absolute;
+    left: 0px;
+    border-color: green;
+}
+
+.monster2 {
+    position: absolute;
+    left: 13px;
+    border-color: yellow;
+}
+
+.monster3 {
+    position: absolute;
+    left: 26px;
+    border-color: blue;
+}
+
+.monster4 {
+    position: absolute;
+    left: 39px;
+}
+
+.monster5 {
+    position: absolute;
+    left: 52px;
+}
+
+.monster6 {
+    position: absolute;
+    left: 78px;
+}
+
+.monster7 {
+    position: absolute;
+    left: 91px;
+}
+
+.monster8 {
+    position: absolute;
+    left: 104px;
+}
+
+.monster9 {
+    position: absolute;
+    left: 117px;
+}
+
+.monster10 {
+    position: absolute;
+    left: 130px;
+}
+
+
+.break {
+    flex-basis: 100%;
+    height: 0;
+    border-style: none;
+}
+
+
+
